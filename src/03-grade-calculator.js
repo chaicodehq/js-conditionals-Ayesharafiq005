@@ -34,33 +34,48 @@ export function calculateGrade(score, hasExtraCredit) {
     if(score >= 90 && score <=100){
       score = 5 + score;
       if(score > 100){
-        score = 100
-        // return "A";
+        score = 100;
       }
     }
+ else if(score >= 80 && score <=89){
+      score = 5 + score;
+    }
+
+   else if(score >= 70 && score <=79){
+      score = 5 + score;
+    }
+
+   else if(score >= 60 && score <=69){
+      score = 5 + score;
+    }
+
+   else if(score >= 0 && score <59){
+      score = 5 + score;
+    }
+
+  }
+
+
 if(score >=90 && score<=100){
   return "A";
 }
 
-    if(score >= 80 && score <=89){
-      score = 5 + score;
+ else if(score >= 80 && score <=89){
      return "B";
     }
 
-    if(score >= 70 && score <=79){
-      score = 5 + score;
+   else if(score >= 70 && score <=79){
      return "C";
     }
 
-    if(score >= 60 && score <=69){
-      score = 5 + score;
+   else if(score >= 60 && score <=69){
       return "D";
     }
 
-    if(score >= 0 && score <59){
-      score = 5 + score;
+   else if(score >= 0 && score <= 59){
      return "F"; 
     }
-  }
+
+
 
 }
